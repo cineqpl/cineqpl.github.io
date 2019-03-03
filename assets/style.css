@@ -1,0 +1,17 @@
+h1 {
+    text-align: center;
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mymedia {
+    display: flex;
+    justify-content: center;
+}
+
+.medialink {
+    width: 48px;
+    height: 48px;
+    margin: 5px;
+}
