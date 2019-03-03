@@ -8,10 +8,43 @@ html {
 .mymedia {
     display: flex;
     justify-content: center;
+    align-items: center;
+
+    width: 60%;
+    margin: auto;
+    padding: 10px;
 }
 
 .medialink {
     width: 48px;
     height: 48px;
+    padding: 4px;
+    margin: 2px;
+    transition-duration: 1s;
+}
+
+.medialink:hover {
+    transform: scale(1.15);
+    background-color: #718EA4;
+    border-radius: 10%;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project {
+    width: 400px;
+    height: 200px;
+    border: 5px solid grey;
     margin: 5px;
+    padding: 10px;
+
+    background-color: lightgray;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 2em;
+
 }
