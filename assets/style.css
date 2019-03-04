@@ -14,7 +14,6 @@ body {
     justify-content: center;
     align-items: center;
 
-    width: 60%;
     margin: auto;
     padding: 10px;
 }
@@ -38,7 +37,7 @@ body {
     justify-content: space-around;
     flex-wrap: wrap;
 
-    width: 60%;
+    width: 50%;
     margin: auto;
 }
 
@@ -49,9 +48,82 @@ body {
     margin: 10px;
     padding: 10px;
 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
     background-color: lightgray;
     border-radius: 10px;
     text-align: center;
     font-size: 2em;
 
+}
+
+div#squares {
+    position: relative;
+    height: 250px;
+    width: 250px;
+    margin: 80px auto;
+}
+div#squares .square1 {
+    display: inline-block;
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    background: white;
+    border-radius: 5%;
+
+    animation: rotate1 3s infinite;
+}
+
+div#squares .square2 {
+    display: inline-block;
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    top: 35px;
+    left: 35px;
+    margin: auto;
+    background: grey;
+    border-radius: 5%;
+
+    animation: rotate2 3s infinite;
+}
+
+div#squares .square3 {
+    display: inline-block;
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    top: 60px;
+    left: 60px;
+    margin: auto;
+    background: black;
+    border-radius: 5%;
+
+    animation: rotate3 3s infinite;
+}
+
+@keyframes rotate1 {
+    0% {transform: rotate(45deg);}
+    100% {transform: rotate(135deg);}
+}
+
+@keyframes rotate2 {
+    0% {
+        transform: rotate(45deg);
+    }
+
+    100% {
+        transform: rotate(225deg);
+    }
+}
+
+@keyframes rotate3 {
+    0% {
+        transform: rotate(45deg);
+    }
+
+    100% {
+        transform: rotate(315deg);
+    }
 }
