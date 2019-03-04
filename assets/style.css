@@ -72,7 +72,7 @@ div#squares .square1 {
     background: white;
     border-radius: 5%;
 
-    animation: rotate1 3s infinite;
+    animation: rotate1 3s infinite linear;
 }
 
 div#squares .square2 {
@@ -86,7 +86,7 @@ div#squares .square2 {
     background: grey;
     border-radius: 5%;
 
-    animation: rotate2 3s infinite;
+    animation: rotate2 3s infinite linear;
 }
 
 div#squares .square3 {
@@ -100,7 +100,7 @@ div#squares .square3 {
     background: black;
     border-radius: 5%;
 
-    animation: rotate3 3s infinite;
+    animation: rotate3 3s infinite linear;
 }
 
 @keyframes rotate1 {
