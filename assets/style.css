@@ -5,9 +5,23 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-    background: linear-gradient(-40deg, rgb(255, 255, 255), rgb(149, 156, 173));
+.background1, .background2 {
+    background-attachment: fixed;
+    background-position: center;
+    padding-bottom: 30px;
 }
+
+.background1 {
+    background: url(/assets/background1.png);
+    background-attachment: fixed;
+    background-position: center;
+    padding-bottom: 30px;
+}
+
+.background2 {
+    background: url(/assets/background2.png);
+}
+
 
 .mymedia {
     display: flex;
@@ -55,6 +69,11 @@ body {
     text-align: center;
     font-size: 2em;
 
+}
+
+.project:hover {
+    background-color: grey;
+    color: white;
 }
 
 div#squares {
