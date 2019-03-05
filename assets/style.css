@@ -18,6 +18,13 @@ h1 {
     height: 100%;
 }
 
+.background2 {
+    background-image: url(/assets/background_main2.png);
+    position: relative;
+
+    color: black;
+}
+
 @media screen and (max-width: 1000px) {
     .background1 {
         height: auto;
@@ -28,13 +35,6 @@ h1 {
         height: auto;
         padding-bottom: 100px;
     }
-}
-
-.background2 {
-    background-image: url(/assets/background_main2.png);
-    position: relative;
-
-    color: black;
 }
 
 .title {
@@ -49,6 +49,18 @@ h1 {
 
 .title h2 {
     font-size: 2em;
+}
+
+.whiteline {
+    position: relative;
+    width: 500px;
+    top: -5px;
+}
+
+@media screen and (max-width: 750px) {
+    .whiteline {
+        width: 66%;
+    }
 }
 
 .mainmenu {
@@ -149,54 +161,6 @@ h1 {
     color: white;
 }
 
-div#squares {
-    position: relative;
-    height: 250px;
-    width: 250px;
-    padding-top: 50px;
-    margin: auto;
-}
-
-div#squares .square1 {
-    display: inline-block;
-    position: absolute;
-    width: 250px;
-    height: 250px;
-    margin: auto;
-    background: white;
-    border-radius: 5%;
-
-    animation: rotate1 3s infinite;
-}
-
-div#squares .square2 {
-    display: inline-block;
-    position: absolute;
-    width: 180px;
-    height: 180px;
-    top: 35px;
-    left: 35px;
-    margin: auto;
-    background: grey;
-    border-radius: 5%;
-
-    animation: rotate2 3s infinite;
-}
-
-div#squares .square3 {
-    display: inline-block;
-    position: absolute;
-    width: 130px;
-    height: 130px;
-    top: 60px;
-    left: 60px;
-    margin: auto;
-    background: black;
-    border-radius: 5%;
-
-    animation: rotate3 3s infinite;
-}
-
 @keyframes bounce {
     
         0%, 100% {
@@ -206,29 +170,4 @@ div#squares .square3 {
         50% {
             transform: translateY(-10px);
         }
-}
-
-@keyframes rotate1 {
-    0% {transform: rotate(45deg);}
-    100% {transform: rotate(135deg);}
-}
-
-@keyframes rotate2 {
-    0% {
-        transform: rotate(45deg);
-    }
-
-    100% {
-        transform: rotate(225deg);
-    }
-}
-
-@keyframes rotate3 {
-    0% {
-        transform: rotate(45deg);
-    }
-
-    100% {
-        transform: rotate(315deg);
-    }
 }
