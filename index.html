@@ -17,22 +17,40 @@
 
     <body>
         <main>
-            <div class="background1" style="height: 100%; padding-top: 10%;">
+            <div class="background1" style="padding-top: 5%;">
 
                 <div class="title">
-                    <img src="assets/cineqlogo.png" style="height: 150px;"/>
+                    <img src="assets/cineqlogo.png" style="height: 150px; margin-bottom: 20px"/>
                     <h1>Marcin Sidorowicz</h1>
                     <img src="/assets/whiteline.png" style="position: relative; width: 500px; top: -5px" />
                     <h2>I have no idea what I'm doing.</h2>
+
+                    <div class="mainmenu">
+                        <div class="menuoption col-sm-10 col-lg-4">
+                            About me
+                        </div>
+
+                        <div class="menuoption col-sm-10 col-lg-4" id="projectslink">
+                            Projects
+                        </div>
+
+                        <div class="menuoption col-sm-10 col-lg-4">
+                            Blog
+                        </div>
+
+                        <div class="menuoption col-sm-10 col-lg-4" id="mymedialink">
+                            Contact me
+                        </div>
+                    </div>
 
                     <img src="assets/scrollwhite.png" class="scroll bounce" />
                 </div>
 
             </div>
 
-            <div class="background2" style="padding-top: 30px;">
+            <div class="background2" id="projects" style="padding-top: 30px; padding-bottom: 100px;">
                 <h1 style="color: black">My projects</h1>
-                <div class="projects container">
+                <div class="projects">
                     <div class="project col-sm-12 col-lg-5">
                         <a href="https://math.uni.wroc.pl/~s288280/database"></a>
                         PostgreSQL + PHP simple database
@@ -54,7 +72,7 @@
                 <img src="assets/scrollblack.png" class="scroll bounce" />
             </div>
 
-            <div class="background1" style="padding-top: 30px">
+            <div class="background1" id="mymedia" style="height: 200px; padding-top: 30px">
                 <h1>My media links</h1>
             
                 <div class="mymedia">
