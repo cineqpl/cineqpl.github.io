@@ -1,27 +1,52 @@
+html {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
 h1 {
     text-align: center;
 }
-html {
-    font-family: Arial, Helvetica, sans-serif;
-}
 
 .background1, .background2 {
-    background-attachment: fixed;
-    background-position: center;
     padding-bottom: 30px;
 }
 
 .background1 {
-    background: url(/assets/background1.png);
-    background-attachment: fixed;
-    background-position: center;
-    padding-bottom: 30px;
+    background-color: black;
+    position: relative;
+    color: white;
 }
 
 .background2 {
-    background: url(/assets/background2.png);
+    background-image: url(/assets/background_main2.png);
+    position: relative;
+
+    color: black;
 }
 
+.title {
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.title h1 {
+    font-size: 6em;
+}
+
+.title h2 {
+    font-size: 2em;
+}
+
+.scroll {
+    position: absolute;
+    bottom: 5%;
+    right: 50%;
+    height: 30px;
+}
+
+.bounce {
+    animation: bounce 1.5s infinite;
+}
 
 .mymedia {
     display: flex;
@@ -80,8 +105,10 @@ div#squares {
     position: relative;
     height: 250px;
     width: 250px;
-    margin: 80px auto;
+    padding-top: 50px;
+    margin: auto;
 }
+
 div#squares .square1 {
     display: inline-block;
     position: absolute;
@@ -120,6 +147,17 @@ div#squares .square3 {
     border-radius: 5%;
 
     animation: rotate3 3s infinite;
+}
+
+@keyframes bounce {
+    
+        0%, 100% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-10px);
+        }
 }
 
 @keyframes rotate1 {
