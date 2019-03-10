@@ -11,10 +11,16 @@ $(document).ready( function() {
         window.status = "";
     }),
 
+    $("#aboutmelink").click(function () {
+        $('html, body').animate({
+            scrollTop: $("#aboutme").offset().top
+        }, 500)
+    });
+
     $("#projectslink").click(function() {
         $('html, body').animate({
             scrollTop: $("#projects").offset().top
-        }, 500)
+        }, 800)
     });
 
     $("#mymedialink").click(function () {
