@@ -43,8 +43,11 @@ $(document).ready( function() {
 
 window.onload = function() {
 
-    var fullTitle1 = document.getElementById("maintitle1").innerHTML;
-    var fullTitle2 = document.getElementById("maintitle2").innerHTML;
+    /* var fullTitle1 = document.getElementById("maintitle1").innerHTML;
+    var fullTitle2 = document.getElementById("maintitle2").innerHTML; */
+
+    var fullTitle1 = "Marcin Sidorowicz";
+    var fullTitle2 = "I have no idea what I'm doing.";
 
     var loadTitle1 = "";
     var loadTitle2 = "";
