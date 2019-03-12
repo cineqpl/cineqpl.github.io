@@ -84,6 +84,8 @@ h1 {
     border: 1px solid white;
     border-radius: 5px;
 
+    cursor: pointer;
+
     transition: all .5s;
 }
 
@@ -146,6 +148,8 @@ h1 {
     border-radius: 10px;
     text-align: center;
     font-size: 2em;
+
+    cursor: pointer;
 
     transition: all .5s;
 

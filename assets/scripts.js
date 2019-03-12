@@ -1,10 +1,5 @@
 $(document).ready( function() {
 
-    $("#bloglink").click(function () {
-        window.open($(this).find("a:first").attr("href"));
-        return false;
-    });
-
     $(".project").click(function() {
         window.open($(this).find("a:first").attr("href"));
         return false;
@@ -19,7 +14,7 @@ $(document).ready( function() {
     $("#aboutmelink").click(function () {
         $('html, body').animate({
             scrollTop: $("#aboutme").offset().top
-        }, 500)
+        }, 800)
     });
 
     $("#projectslink").click(function() {
@@ -42,9 +37,6 @@ $(document).ready( function() {
 });
 
 window.onload = function() {
-
-    /* var fullTitle1 = document.getElementById("maintitle1").innerHTML;
-    var fullTitle2 = document.getElementById("maintitle2").innerHTML; */
 
     var fullTitle1 = "Marcin Sidorowicz";
     var fullTitle2 = "I have no idea what I'm doing.";
